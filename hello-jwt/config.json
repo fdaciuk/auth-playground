@@ -1,0 +1,4 @@
+{
+  "jwtSecret": "my-secret-token",
+  "db": "mongodb://<username>:<password>@<database-address>"
+}
