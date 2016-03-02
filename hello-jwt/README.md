@@ -15,7 +15,13 @@ npm start
 POST http://0.0.0.0:8080/api/users
 ```
 
-Sending `username` and `password` on body
+Sending `username` and `password` on body.
+
+**Curl example:**
+
+```console
+curl -H 'Content-Type: application/json' -X POST -d '{"username": "yourusername", "password": "123"}' http://0.0.0.0:8080/api/users
+```
 
 ---
 
@@ -25,7 +31,13 @@ Sending `username` and `password` on body
 POST http://0.0.0.0:8080/api/login
 ```
 
-Sending `username` and `password` on body
+Sending `username` and `password` on body.
+
+**Curl example:**
+
+```console
+curl -H 'Content-Type: application/json' -X POST -d '{"username": "yourusername", "password": "123"}' http://0.0.0.0:8080/api/login
+```
 
 ---
 
@@ -36,4 +48,10 @@ GET http://0.0.0.0:8080/api/users
 ```
 
 Sending `x-access-token` on header, passing the token received on login.
+
+**Curl example:**
+
+```console
+curl -H 'x-access-token: <token>' -X GET http://0.0.0.0:8080/api/users
+```
 
