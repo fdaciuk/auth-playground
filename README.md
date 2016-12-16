@@ -1,1 +1,1 @@
-# auth-playground
+# Auth Playground
